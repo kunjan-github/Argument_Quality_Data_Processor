@@ -43,7 +43,7 @@ This repository contains Python code for processing the "Dagstuhl-15512-ArgQuali
 3. Run the Python script to process the corpus and create data splits:
 
     ```bash
-    python script.py
+    python main.py
     ```
 
 4. After execution, you will find the following files generated:
