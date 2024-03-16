@@ -1,13 +1,20 @@
-# Computational Argumentation - Data Acquisition
-This repository contains Python code for processing the "Dagstuhl-15512-ArgQuality" corpus, which involves downloading the corpus, extracting relevant data, storing it as JSON, and creating data splits for machine learning tasks.
+# Argument_Quality_Data_Processor
+
+This repository contains Python code for processing the "Dagstuhl-15512-ArgQuality" corpus. It involves downloading the corpus, extracting relevant data, storing it as JSON, creating data splits for machine learning tasks, and computing basic statistics.
+
+## Learning Goals
+
+- Working with available data in Python.
+- Data splits for Machine Learning.
+- Computing basic statistics.
 
 ## Tasks
 
 1. **Download the Corpus**
-    - The "Dagstuhl-15512-ArgQuality" corpus should be downloaded for running the provided code.
+    - Download the corpus for further processing.
 
 2. **Extract Relevant Data and Store as JSON**
-    - Extract relevant information per argument from the corpus, including:
+    - Extract relevant information per argument:
         - Argument ID
         - Issue
         - Stance on the issue
@@ -15,19 +22,19 @@ This repository contains Python code for processing the "Dagstuhl-15512-ArgQuali
         - Quality scores (from all three annotators)
         - Effectiveness scores (from all three annotators)
         - Argument text
-    - Store the extracted data in JSON format.
+    - Store the extracted data as JSON.
 
 3. **Create Data Splits**
-    - Split the extracted data into three subsets for training ML models:
+    - Split the data into three subsets for training ML models:
         - Training set
         - Test set
         - Validation set
-    - Perform a 70-20-10 percent split for train-test-validation.
+    - Perform a 70-20-10 percent split (train-test-validation).
+    - Randomly split the data.
     - Ensure no duplicates exist (i.e., the same argument in two splits).
 
-4. **Data Export**
-    - Export the combined arguments as a JSON file in the format presented in the previous step.
-    - Export the splits into separate files, e.g., `train.json`, `test.json`, and `val.json`.
+4. **Compute Statistics**
+    - Compute basic statistics on the data.
 
 ## Usage
 
@@ -37,17 +44,16 @@ This repository contains Python code for processing the "Dagstuhl-15512-ArgQuali
     git clone <repository-url>
     ```
 
-2. Download the "Dagstuhl-15512-ArgQuality" corpus and place it in the appropriate directory.
-
-3. Run the Python script to process the corpus and create data splits:
+2. Run the Python script:
 
     ```bash
     python main.py
     ```
 
-4. After execution, you will find the following files generated:
-    - `combined_arguments.json`: JSON file containing all extracted arguments.
-    - `train.json`, `test.json`, `val.json`: JSON files containing training, test, and validation data splits, respectively.
+3. After execution, you will find the following files generated:
+    - `train.json`: Training set
+    - `test.json`: Test set
+    - `val.json`: Validation set
 
 ## Requirements
 
@@ -59,4 +65,6 @@ This repository contains Python code for processing the "Dagstuhl-15512-ArgQuali
 
 ## Note
 
-Ensure that the corpus directory structure matches the expected structure in the code. Adjust paths if necessary.
+- Adjust paths if necessary.
+- Ensure that the corpus directory structure matches the expected structure in the code.
+
