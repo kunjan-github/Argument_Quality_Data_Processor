@@ -1,5 +1,4 @@
-# Computational Argumentation 2022 -- Assignment 1
-
+# Computational Argumentation - Data Acquisition
 This repository contains Python code for processing the "Dagstuhl-15512-ArgQuality" corpus, which involves downloading the corpus, extracting relevant data, storing it as JSON, and creating data splits for machine learning tasks.
 
 ## Tasks
